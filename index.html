@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a14">
+  <meta name="description" content="Kanishka Senthilkumar — Artificial Intelligence and Data Science undergraduate, aspiring AI Engineer. Explore skills, education and portfolio.">
+  <title>Kanishka Senthilkumar | Aspiring AI Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation"><span></span><span></span><span></span></button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home" aria-label="Kanishka home"><span class="brand-mark">K<span>.</span></span><span class="brand-name">KANISHKA<span>PORTFOLIO</span></span></a>
+    <div class="side-profile">
+      <div class="mini-avatar" id="miniAvatar"><span>KS</span></div>
+      <div><strong data-edit="name">Kanishka Senthilkumar</strong><small data-edit="title">Aspiring AI Engineer</small></div>
+    </div>
+    <div class="nav-label">MENU</div>
+    <nav class="side-nav" aria-label="Main navigation">
+      <a class="active" href="#home"><i>⌂</i> Home</a>
+      <a href="#about"><i>◉</i> About Me</a>
+      <a href="#education"><i>▤</i> Education</a>
+      <a href="#skills"><i>✳</i> Skills</a>
+      <a href="#projects"><i>▧</i> Projects</a>
+      <a href="#experience"><i>◷</i> Experience</a>
+      <a href="#certifications"><i>✧</i> Certifications</a>
+      <a href="#contact"><i>✉</i> Contact</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="availability"><span class="pulse"></span> Open to opportunities</div>
+      <small>© <span id="year"></span> Kanishka</small>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="topbar">
+      <div class="breadcrumb">PORTFOLIO <span>/</span> <b id="currentSection">HOME</b></div>
+      <div class="top-actions"><span class="location-pill">⌖ <span data-edit="location">Erode, Tamil Nadu, India</span></span><button class="edit-toggle" id="editToggle">✎ <span>Edit portfolio</span></button></div>
+    </header>
+
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span> HELLO, WORLD! I'M</div>
+        <h1 data-edit="name">Kanishka <span class="gradient-text">Senthilkumar</span></h1>
+        <div class="hero-role"><span class="role-dot"></span><span data-edit="titleLong">Undergraduate Student | Aspiring AI Engineer</span></div>
+        <p class="hero-tagline" data-edit="tagline">“Curious Mind. Continuous Learning. Building the Future with AI.”</p>
+        <p class="hero-intro">Exploring the possibilities of intelligent technology and turning curiosity into meaningful innovation.</p>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#about">Explore my journey <span>↗</span></a><a class="btn btn-ghost" href="#contact">Let's connect</a></div>
+        <div class="hero-meta"><span><b>01</b> / AI & DATA SCIENCE</span><span class="meta-divider"></span><span>BASED IN <b data-edit="shortLocation">ERODE, INDIA</b></span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="portrait-frame">
+          <div class="portrait-glow"></div>
+          <img id="profileImage" class="profile-image" src="assets/profile-placeholder.svg" alt="Kanishka profile portrait">
+          <div class="portrait-overlay"><span class="portrait-caption">AI & DATA SCIENCE</span><span class="portrait-index">KS / 2026</span></div>
+        </div>
+        <div class="float-card avatar-card">
+          <div class="sound-bars"><i></i><i></i><i></i><i></i><i></i></div>
+          <div><b>Meet Kanishka</b><small>AI avatar experience</small></div>
+          <span class="live-dot"></span>
+        </div>
+        <div class="float-card code-card"><span class="code-bracket">{ }</span><div><b>Always learning</b><small>Always building</small></div></div>
+      </div>
+      <div class="hero-bottom-note"><span class="scroll-line"></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="avatar-section section" id="meet">
+      <div class="section-heading"><div><span class="section-kicker">A PERSONAL HELLO</span><h2>Meet me <span class="gradient-text">in motion.</span></h2></div><span class="section-count">01 — AVATAR</span></div>
+      <div class="avatar-panel">
+        <div class="avatar-screen">
+          <video id="avatarVideo" playsinline preload="metadata" poster="assets/profile-placeholder.svg"></video>
+          <div class="avatar-empty" id="avatarEmpty"><div class="avatar-play-icon">▶</div><b>Your AI talking avatar will appear here</b><p>Upload an AI-generated talking video in Edit mode, or use the welcome voice preview below.</p></div>
+          <div class="avatar-screen-tag"><span class="live-dot"></span> PERSONAL INTRODUCTION</div>
+        </div>
+        <div class="avatar-info">
+          <span class="section-kicker">WELCOME TO MY PORTFOLIO</span><h3>A little introduction,<br><span class="gradient-text">just for you.</span></h3>
+          <p id="welcomeSpeech" data-edit="welcomeSpeech">Hey there! Welcome to my portfolio! I'm Kanishka Senthilkumar, an Artificial Intelligence and Data Science undergraduate. I'm passionate about exploring AI, programming, and emerging technologies. Here, you'll get to know about my skills, education, projects, and my journey towards becoming an AI Engineer. Feel free to explore my portfolio. Thank you for visiting, and I hope you enjoy your experience!</p>
+          <div class="avatar-controls">
+            <button class="btn btn-primary" id="meetButton">▶ <span>Tap to Meet Kanishka</span></button>
+            <button class="control-btn" id="pauseButton" title="Pause" aria-label="Pause">Ⅱ</button>
+            <button class="control-btn" id="replayButton" title="Replay" aria-label="Replay">↻</button>
+            <button class="control-btn" id="muteButton" title="Mute" aria-label="Mute">♫</button>
+          </div>
+          <small class="muted-note" id="avatarStatus">Voice preview uses your browser's speech engine. Add a real AI avatar video to enable synchronized lip movement.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="about">
+      <div class="section-heading"><div><span class="section-kicker">01 / ABOUT ME</span><h2>Curiosity is my <span class="gradient-text">starting point.</span></h2></div><span class="section-count">ABOUT</span></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="lead" data-edit="aboutIntro">Hello! I'm an enthusiastic Artificial Intelligence and Data Science undergraduate passionate about building intelligent solutions that solve real-world problems.</p>
+          <p data-edit="aboutBody1">I'm currently pursuing my B.Tech in Artificial Intelligence and Data Science, where I'm developing my knowledge in programming, artificial intelligence, machine learning, and software development.</p>
+          <p data-edit="aboutBody2">I enjoy exploring emerging technologies and transforming ideas into practical applications through continuous learning, experimentation, and hands-on projects.</p>
+          <div class="quote-card"><span>“</span><p data-edit="belief">I believe in learning by building, improving through challenges, and turning curiosity into meaningful innovation.</p></div>
+        </div>
+        <div class="interest-card"><span class="section-kicker">WHAT I'M INTO</span><h3>Technical interests</h3><div class="interest-list" id="interestList"></div></div>
+      </div>
+      <div class="goal-strip"><div class="goal-icon">◎</div><div><span class="section-kicker">MY GOAL</span><p data-edit="goal">My goal is to become a skilled AI Engineer and contribute to innovative products that make a meaningful impact. I'm continuously strengthening my technical knowledge, problem-solving skills, and project-building experience.</p></div></div>
+      <div class="connect-note"><span>LET'S CONNECT</span><p data-edit="connectText">I'm open to connecting with developers, collaborating on innovative projects, learning from experienced professionals, and exploring internship opportunities.</p><a href="#contact">Start a conversation ↗</a></div>
+    </section>
+
+    <section class="section content-section" id="education">
+      <div class="section-heading"><div><span class="section-kicker">02 / EDUCATION</span><h2>The learning <span class="gradient-text">chapter.</span></h2></div><span class="section-count">EDUCATION</span></div>
+      <div class="timeline"><div class="timeline-line"></div><div class="timeline-entry"><div class="timeline-dot"></div><div class="timeline-date">CURRENT EDUCATION</div><article class="education-card"><div class="edu-top"><span class="edu-icon">⌘</span><span class="status-chip">UNDERGRADUATE</span></div><h3 data-edit="degree">B.Tech – Artificial Intelligence and Data Science</h3><h4 data-edit="institution">Velalar College of Engineering and Technology</h4><p data-edit="eduLocation">Erode, Tamil Nadu</p><div class="edu-details"><div><small>YEAR OF STUDY</small><b data-edit="studyYear">[Add year]</b></div><div><small>GRADUATION</small><b data-edit="graduationYear">[Add year]</b></div><div><small>CGPA</small><b data-edit="cgpa">[Add CGPA]</b></div></div></article></div></div>
+    </section>
+
+    <section class="section content-section" id="skills">
+      <div class="section-heading"><div><span class="section-kicker">03 / TECHNICAL SKILLS</span><h2>Tools I’m learning <span class="gradient-text">& exploring.</span></h2></div><span class="section-count">SKILLS</span></div>
+      <p class="section-description">A growing toolkit built through learning, practice, and curiosity. Skill levels are intentionally not rated.</p>
+      <div class="skills-grid" id="skillsGrid"></div>
+      <div class="skills-footnote">✳ Skills and interests can be edited anytime using the Edit portfolio panel.</div>
+    </section>
+
+    <section class="section content-section" id="projects">
+      <div class="section-heading"><div><span class="section-kicker">04 / SELECTED WORK</span><h2>Ideas become <span class="gradient-text">projects.</span></h2></div><span class="section-count">PROJECTS</span></div>
+      <p class="section-description">A space for practical experiments and things I build next. These are editable placeholders, not claimed completed projects.</p>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <section class="section content-section" id="experience">
+      <div class="section-heading"><div><span class="section-kicker">05 / EXPERIENCE</span><h2>Growing through <span class="gradient-text">practice.</span></h2></div><span class="section-count">EXPERIENCE</span></div>
+      <div class="experience-card"><div class="experience-symbol">✦</div><div><span class="status-chip">LEARNING IN PROGRESS</span><h3>Building my foundation</h3><p data-edit="experienceText">Currently building my technical knowledge and practical experience through continuous learning and project development.</p></div><span class="experience-watermark">01</span></div>
+    </section>
+
+    <section class="section content-section" id="certifications">
+      <div class="section-heading"><div><span class="section-kicker">06 / CERTIFICATIONS & ACHIEVEMENTS</span><h2>Every milestone <span class="gradient-text">matters.</span></h2></div><span class="section-count">MILESTONES</span></div>
+      <p class="section-description">Add verified certificates, courses, awards, and achievements here when ready.</p>
+      <div class="cert-grid" id="certGrid"></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading"><div><span class="section-kicker">07 / GET IN TOUCH</span><h2>Have an idea? <span class="gradient-text">Let's talk.</span></h2></div><span class="section-count">CONTACT</span></div>
+      <div class="contact-grid">
+        <div class="contact-copy"><p class="lead">I'm always happy to connect, learn, and explore opportunities in AI and technology.</p>
+          <a class="contact-method" id="emailLink" href="mailto:kanishka8740@gmail.com"><span class="contact-icon">✉</span><span><small>EMAIL ME</small><b data-edit="email">kanishka8740@gmail.com</b></span><i>↗</i></a>
+          <div class="contact-method"><span class="contact-icon">⌖</span><span><small>LOCATION</small><b data-edit="location">Erode, Tamil Nadu, India</b></span></div>
+          <div class="social-links" id="socialLinks"></div>
+          <button class="btn btn-ghost resume-button" id="resumeButton">↓ <span>Download my resume</span></button><small class="muted-note" id="resumeStatus">Resume placeholder — upload your PDF in Edit mode.</small>
+        </div>
+        <form class="contact-form" id="contactForm"><div class="form-heading"><b>Send a message</b><span>I'll be glad to hear from you.</span></div><label>Your name<input required name="name" placeholder="Your name"></label><label>Your email<input required type="email" name="email" placeholder="you@example.com"></label><label>Subject<input required name="subject" placeholder="What's this about?"></label><label>Message<textarea required name="message" rows="4" placeholder="Write your message..."></textarea></label><button class="btn btn-primary" type="submit">Send message <span>↗</span></button><small class="muted-note">Opens your email app with the message ready to send.</small></form>
+      </div>
+    </section>
+    <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">K<span>.</span></span><span class="brand-name">KANISHKA<span>PORTFOLIO</span></span></a><p data-edit="tagline">“Curious Mind. Continuous Learning. Building the Future with AI.”</p><span>DESIGNED WITH CURIOSITY · © <span id="footerYear"></span></span></footer>
+  </main>
+
+  <div class="edit-backdrop" id="editBackdrop"></div>
+  <aside class="edit-panel" id="editPanel" aria-label="Portfolio editor">
+    <div class="edit-header"><div><span class="section-kicker">PERSONALIZE</span><h3>Edit your portfolio</h3></div><button id="closeEditor" class="close-btn" aria-label="Close editor">×</button></div>
+    <p class="editor-help">Changes are saved in this browser on this device. For publishing, update the content in <code>app.js</code> or use the editor on your deployed site.</p>
+    <div class="editor-actions"><button class="btn btn-primary" id="saveEdits">Save changes</button><button class="btn btn-ghost" id="resetEdits">Reset</button></div>
+    <div class="editor-group"><h4>Profile & contact</h4>
+      <label>Full name<input data-field="name"></label><label>Professional title<input data-field="titleLong"></label><label>Short title<input data-field="title"></label><label>Tagline<input data-field="tagline"></label><label>Location<input data-field="location"></label><label>Email<input data-field="email" type="email"></label><label>Phone number (optional)<input data-field="phone" placeholder="Add your number"></label>
+      <label>LinkedIn URL<input data-field="linkedin" placeholder="https://..."></label><label>GitHub URL<input data-field="github" placeholder="https://..."></label><label>Instagram URL<input data-field="instagram" placeholder="https://..."></label>
+    </div>
+    <div class="editor-group"><h4>Education</h4><label>Degree<input data-field="degree"></label><label>Institution<input data-field="institution"></label><label>Location<input data-field="eduLocation"></label><label>Year of study<input data-field="studyYear"></label><label>Graduation year<input data-field="graduationYear"></label><label>CGPA<input data-field="cgpa"></label></div>
+    <div class="editor-group"><h4>About & experience</h4><label>Introduction<textarea data-field="aboutIntro" rows="3"></textarea></label><label>About paragraph 1<textarea data-field="aboutBody1" rows="3"></textarea></label><label>About paragraph 2<textarea data-field="aboutBody2" rows="3"></textarea></label><label>My goal<textarea data-field="goal" rows="3"></textarea></label><label>Belief / quote<textarea data-field="belief" rows="2"></textarea></label><label>Connect message<textarea data-field="connectText" rows="2"></textarea></label><label>Experience text<textarea data-field="experienceText" rows="2"></textarea></label></div>
+    <div class="editor-group"><h4>Media uploads</h4><label>Profile photo<input type="file" id="photoUpload" accept="image/*"></label><label>AI talking avatar video (MP4/WebM)<input type="file" id="videoUpload" accept="video/mp4,video/webm"></label><label>Resume PDF<input type="file" id="resumeUpload" accept="application/pdf"></label><small class="muted-note">Uploaded media is stored in this browser. Keep a copy of your original files.</small></div>
+    <div class="editor-group"><h4>Welcome speech</h4><label>Avatar script<textarea data-field="welcomeSpeech" rows="6"></textarea></label></div>
+    <div class="editor-group"><h4>Quick links</h4><p class="muted-note">Projects, skills, certificates, and technical interests can be edited in the <code>app.js</code> data section. See README.</p></div>
+    <button class="btn btn-primary full-btn" id="saveEditsBottom">Save all changes</button>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
