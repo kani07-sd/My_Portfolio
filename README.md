@@ -1,69 +1,69 @@
-# Kanishka Premium AI Portfolio — Python Edition
+# Kanishka Senthilkumar
 
-This is the Python/Flask version of the supplied portfolio. The original `index.html`,
-`styles.css`, `app.js`, and `assets/` are preserved so the page design and existing
-browser interactions remain the same. Python/Flask replaces the original Node.js server.
+### Developer | Creative Thinker | Technology Enthusiast
 
-## Run in VS Code
+<p align="center">
+  <i>Turning ideas into meaningful digital experiences.</i>
+</p>
 
-1. Extract this ZIP file.
-2. Open the extracted `Kanishka_Python_Portfolio` folder in VS Code.
-3. Open the VS Code terminal (**Terminal → New Terminal**).
-4. Create and activate a virtual environment (recommended):
+---
 
-   **Windows**
-   ```powershell
-   py -m venv .venv
-   .venv\Scripts\Activate.ps1
-   ```
+## ✦ About Me
 
-   **macOS / Linux**
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
+Hello! I'm **Kanishka Senthilkumar**, a passionate developer with an interest in technology, creative problem-solving, and building meaningful digital experiences.
 
-5. Install the Python dependency:
-   ```bash
-   pip install -r requirements.txt
-   ```
-6. Start the website:
-   ```bash
-   python app.py
-   ```
-7. Open **http://127.0.0.1:5000** in your browser.
+I enjoy exploring new technologies, experimenting with ideas, and transforming concepts into functional and visually engaging solutions.
 
-### Windows quick start
+I believe that great development is not just about writing code — it's about creating experiences that are thoughtful, intuitive, and impactful.
 
-You can alternatively double-click `run_windows.bat`. It creates a virtual environment
-if needed, installs Flask, and starts the site.
+## ✦ What I Do
 
-## Project files
+- Develop modern and responsive web experiences.
+- Explore Python and software development.
+- Build creative projects and practical solutions.
+- Experiment with modern technologies and new ideas.
+- Continuously learn, improve, and grow as a developer.
 
-- `app.py` — Python Flask server and API routes
-- `index.html` — portfolio page
-- `styles.css` — original responsive styling
-- `app.js` — original browser-side interactions and editable portfolio content
-- `assets/` — original favicon and profile placeholder
-- `requirements.txt` — Python dependencies
+## ✦ Tech Stack
 
-## Editing the portfolio
+**Languages & Development**
 
-Use the existing **Edit portfolio** control on the page. For permanent default content
-changes, edit the `DEFAULT_CONTENT`, `PROJECTS`, `CERTIFICATES`, `SKILLS`, and `INTERESTS`
-data near the top of `app.js`. Browser edits are stored in that browser's local storage;
-they do not automatically update the source files or sync to other devices.
+- Python
+- HTML5
+- CSS3
+- JavaScript
 
-## AI talking avatar
+**Tools & Platforms**
 
-The existing welcome voice preview uses the browser's speech engine. It is not lip-synced.
-To show a real talking avatar, upload a generated MP4/WebM through Edit Portfolio.
-A provider-backed generation endpoint is only a scaffold: no provider credentials or
-provider-specific API adapter were supplied with the original project.
+- Visual Studio Code
+- Git
+- GitHub
 
-## Notes
+## ✦ Featured Work
 
-- This project uses Python for its local web server, while JavaScript remains in the
-  browser for the original page's interactive features. HTML/CSS alone cannot replace
-  those browser interactions without rewriting them.
-- Do not put private API keys in frontend files.
+I believe every project is an opportunity to learn something new, solve a problem, and bring an idea to life.
+
+Explore my GitHub repositories to discover my work, experiments, and ongoing projects.
+
+## ✦ My Philosophy
+
+> "Great things are built one thoughtful step at a time."
+
+I value consistency, curiosity, creativity, and continuous learning. My goal is to keep exploring, keep building, and create work that makes a difference.
+
+## ✦ Let's Connect
+
+I'm always open to connecting with people, sharing ideas, and exploring new opportunities.
+
+- **GitHub:** [kani07-sd](https://github.com/kani07-sd)
+- **Portfolio:** Add your live portfolio link
+- **LinkedIn:** Add your LinkedIn profile
+- **Email:** Add your professional email
+
+---
+
+<p align="center">
+  <b>Designed with purpose. Built with passion. Driven by curiosity.</b>
+  <br/>
+  © 2026 Kanishka Senthilkumar. All rights reserved.
+</p>
