@@ -59,14 +59,32 @@ const SKILLS = [
   }
 ];
 
-const PROJECTS = [1, 2, 3].map(n => ({
-  name: `Project ${n} — Add your title`,
-  description: "Add a short description of your real project, the problem it solves, and what you learned while building it.",
-  technologies: "Add technologies",
-  github: "",
-  demo: "",
-  placeholder: true
-}));
+const PROJECTS = [
+    {
+        name: "Findmate AI",
+        description: "An AI-powered lost and found solution designed to help college students report, search, and recover lost items easily.",
+        technologies: "AI • Python • Web Development",
+        github: "",
+        demo: "",
+        placeholder: false
+    },
+    {
+        name: "Uzhavan AI",
+        description: "An AI-powered agricultural assistant featuring FarmGPT for farmer support and a smart zonal irrigation system integrating soil moisture sensors and automated water control.",
+        technologies: "Python • Flask • Ollama • ESP32 • IoT",
+        github: "",
+        demo: "",
+        placeholder: false
+    },
+    {
+        name: "NEXOVA",
+        description: "An AI-powered student career guidance platform that helps engineering students explore career paths, build skills, follow roadmaps, discover projects, and prepare for internships and placements.",
+        technologies: "Python • Flask • SQLite • HTML • CSS • JavaScript",
+        github: "",
+        demo: "",
+        placeholder: false
+    }
+];
 
 const CERTIFICATES = [1, 2, 3].map(n => ({
   name: "Add certification name",
@@ -132,12 +150,12 @@ function renderContent() {
       <div class="project-art">
         <span>⌘</span>
         <small class="placeholder-label">
-          PROJECT ${String(i + 1).padStart(2, "0")} / EDITABLE
+          "FEATURED PROJECT"} / EDITABLE
         </small>
       </div>
       <div class="project-body">
         <div class="placeholder-status">
-          ◌ PLACEHOLDER — ADD YOUR PROJECT
+          ◌ PLACEHOLDER — COMPLETED PROJECT
         </div>
         <h3>${escapeHTML(p.name)}</h3>
         <p>${escapeHTML(p.description)}</p>
