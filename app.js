@@ -62,6 +62,7 @@ const SKILLS = [
 const PROJECTS = [
     {
         name: "Findmate AI",
+        image:"assets/project-images/findmate-ai.jpg",
         description: "An AI-powered lost and found solution designed to help college students report, search, and recover lost items easily.",
         technologies: "AI • Python • Web Development",
         github: "",
@@ -70,6 +71,7 @@ const PROJECTS = [
     },
     {
         name: "Uzhavan AI",
+        image:"assets/project-images/uzhavan-ai.jpg",
         description: "An AI-powered agricultural assistant featuring FarmGPT for farmer support and a smart zonal irrigation system integrating soil moisture sensors and automated water control.",
         technologies: "Python • Flask • Ollama • ESP32 • IoT",
         github: "",
@@ -78,6 +80,7 @@ const PROJECTS = [
     },
     {
         name: "NEXOVA",
+        image:"assets/project-images/nexova.jpg",
         description: "An AI-powered student career guidance platform that helps engineering students explore career paths, build skills, follow roadmaps, discover projects, and prepare for internships and placements.",
         technologies: "Python • Flask • SQLite • HTML • CSS • JavaScript",
         github: "",
@@ -86,13 +89,44 @@ const PROJECTS = [
     }
 ];
 
-const CERTIFICATES = [1, 2, 3].map(n => ({
-  name: "Add certification name",
-  organization: "Add issuing organization",
-  date: "Add completion date",
-  placeholder: true
-}));
-
+const CERTIFICATES = [
+  {
+    name: "IGNITIA 2026",
+    organization: "IEEE EMB Society, VCET",
+    date: "2026",
+    image: "assets/certificates/ieee.jpg.jpeg"
+  },
+  {
+    name: "Deploying LLMs and Agents On-Prem",
+    organization: "Nunnari Academy",
+    date: "2026",
+    image: "assets/certificates/nunnari.jpg.jpeg"
+  },
+  {
+    name: "Introduction to Industry 4.0 and Industrial IoT",
+    organization: "NPTEL",
+    date: "2026",
+    image: "assets/certificates/nptel2.jpg.jpeg"
+  },
+  {
+    name: "Neuroverse'26 AI Hackathon",
+    organization: "KPRIET,Coimbatore",
+    date: "2026",
+    image: "assets/certificates/kpr.jpg.jpeg"
+  },
+  {
+    name: "Enhancing Soft Skills and Personality",
+    organization: "NPTEL",
+    date: "2026",
+    image: "assets/certificates/nptel1.jpg.jpeg"
+  },
+  {
+    name: "Mirai'26",
+    organization: "Kongu engineering College,erode",
+    date: "2026",
+    image: "assets/certificates/mirai.jpg.jpeg"
+  }
+];
 const STORAGE_KEY = "kanishkaPortfolioV1";
 
 let content = { ...DEFAULT_CONTENT };
@@ -145,23 +179,27 @@ function renderContent() {
     ).join("")
   ).join("");
 
-  $("#projectsGrid").innerHTML = PROJECTS.map((p, i) =>
+ $("#projectsGrid").innerHTML = PROJECTS.map((p, i) =>
     `<article class="project-card">
       <div class="project-art">
-        <span>⌘</span>
+        <img
+          class="project-image"
+          src="${escapeAttr(p.image)}"
+          alt="${escapeAttr(p.name)}"
+        >
         <small class="placeholder-label">
-          "FEATURED PROJECT"} / EDITABLE
+          FEATURED PROJECT
         </small>
       </div>
+
       <div class="project-body">
-        <div class="placeholder-status">
-          ◌ PLACEHOLDER — COMPLETED PROJECT
-        </div>
         <h3>${escapeHTML(p.name)}</h3>
         <p>${escapeHTML(p.description)}</p>
+
         <div class="tech-tags">
           <span>${escapeHTML(p.technologies)}</span>
         </div>
+
         <div class="project-links">
           ${p.github
             ? `<a href="${escapeAttr(p.github)}" target="_blank" rel="noopener">GitHub ↗</a>`
@@ -172,18 +210,34 @@ function renderContent() {
         </div>
       </div>
     </article>`
-  ).join("");
+).join("");
 
   $("#certGrid").innerHTML = CERTIFICATES.map(c =>
-    `<article class="cert-card">
-      <div class="cert-art">✧</div>
-      <div class="cert-body">
-        <small>EDITABLE PLACEHOLDER</small>
-        <h3>${escapeHTML(c.name)}</h3>
-        <p>${escapeHTML(c.organization)} · ${escapeHTML(c.date)}</p>
-      </div>
-    </article>`
-  ).join("");
+  `<article class="cert-card">
+    <div class="cert-art">
+      <img
+        src="${escapeAttr(c.image)}"
+        alt="${escapeAttr(c.name)}"
+        class="cert-image"
+      >
+    </div>
+
+    <div class="cert-body">
+      <small>VERIFIED LEARNING</small>
+      <h3>${escapeHTML(c.name)}</h3>
+      <p>${escapeHTML(c.organization)} · ${escapeHTML(c.date)}</p>
+
+      <a
+        href="${escapeAttr(c.image)}"
+        target="_blank"
+        rel="noopener"
+        class="cert-view"
+      >
+        View Certificate ↗
+      </a>
+    </div>
+  </article>`
+).join("");
 
   const socials = [
     ["LinkedIn", content.linkedin],
