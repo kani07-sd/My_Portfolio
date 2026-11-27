@@ -1,3 +1,4 @@
+
 # Kanishka Senthilkumar
 
 ### Developer | Creative Thinker | Technology Enthusiast
@@ -56,9 +57,9 @@ I value consistency, curiosity, creativity, and continuous learning. My goal is 
 I'm always open to connecting with people, sharing ideas, and exploring new opportunities.
 
 - **GitHub:** [kani07-sd](https://github.com/kani07-sd)
-- **Portfolio:** Add your live portfolio link
-- **LinkedIn:** Add your LinkedIn profile
-- **Email:** Add your professional email
+- **Portfolio:** [Visit My Portfolio](https://my-portfolio-hbuc.onrender.com/)
+- **LinkedIn:** [Connect with Me](https://www.linkedin.com/in/kanishka-senthilkumar-6561b0386/)
+- **Email:** [kanishka8740@gmail.com](mailto:kanishka8740@gmail.com)
 
 ---
 
